@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>キャラクター管理帳</title>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&family=Shippori+Mincho:wght@500&family=Yomogi&family=Klee+One:wght@600&family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="pg-list"><h1>キャラクター</h1><input id="q" type="search" placeholder="名前・設定で検索"><div id="ls"></div></div>
+<div id="pg-bd"><h1>誕生日</h1><div id="bd"></div></div>
+<div id="pg-menu"><h1>メニュー</h1>
+<h2>ホーム背景（全キャラ共通）</h2>
+<div class="row"><button class="b g" id="bgb">🖼 背景を登録</button><button class="b g" id="bgx">背景を外す</button></div>
+<input id="bgf" type="file" accept="image/*" style="display:none">
+<p class="sm">キャラごとの専用背景・BGM・お気に入り（ホームに表示、最大5人）は、各キャラの「編集」から設定します。</p></div>
+<div id="pg-home" class="stage"></div>
+<button class="fab" id="add" aria-label="追加">＋</button>
+<nav id="nav"><button data-t="home"><i>🏠</i>ホーム</button><button data-t="list"><i>👥</i>キャラクター</button><button data-t="bd"><i>🎂</i>誕生日</button><button data-t="menu"><i>⚙️</i>メニュー</button></nav>
+<div id="ov"></div>
+<div id="cr"><div id="cw"></div><div class="sm" id="cn" style="color:#ddd;text-align:center"></div><div id="sz" style="font-weight:700"></div><label id="rw" style="display:none;color:#fff;font-size:14px"><input type="checkbox" id="rk" style="width:auto;margin:0 6px 0 0"><span id="rt"></span></label><div class="row"><button class="b g" id="c0">やめる</button><button class="b g" id="c1">そのまま登録</button><button class="b" id="c2">切り抜いて登録</button></div></div>
+<script src="script.js"></script>
+</body>
+</html>
